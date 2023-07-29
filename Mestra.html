@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valeriosavage.com</title>
+    <style>
+        body{
+            text-align: center;
+            background: rgb(231, 108, 129);
+        }
+        header{
+            font: normal 22pt algerian;
+            color: white;
+            text-align: center;
+            background:rgb(231, 108, 129);
+        }
+        section{
+            background: white;
+            font: normal 12pt castellar;
+            color:rgb(231, 49, 80);
+            width: 650px;
+            text-align: center;
+            margin: auto;
+            border-radius: 30px;
+            
+            
+        }
+        footer{
+            color: white;
+            font: normal 16pt times new roman;
+        }
+        img{
+            width: 300px;
+        }
+        input{
+            border-radius: 5px;
+            height: 30px;
+            width: 70px;
+        }
+        video{
+            width: 350px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>Savage walking into Danger</p>
+    </header>
+    <section>
+        <div id="introducao">
+            <p></p>
+           <br><p><strong>Ola Mestra!</strong></p>
+           <p><strong>Queria conseguir criar algo lindo a sua altura</strong></p>
+           <p><strong>Porém minha mente nao parece habilidoso</strong></p> 
+           <p><strong>O suficiente para conseguir</strong></p>
+           <p><strong>Contudo for all my Savagery</strong></p>
+           <p><strong>Dedico a ti esta pagina web!</strong></p>
+           
+        </div>
+        <div>
+            <img id="capa" src="gaara.jpg" alt="deve ser amor" height="400px" >
+        </div>
+        <div id="semanas">
+            <p></p>
+            <p><input type="button" value="Segunda" id="seg" onclick="seg()">
+                <input type="button" value="Terça" id="ter" onclick="ter()">
+                <input type="button" value="Quarta" id="qua" onclick="qua()">
+                <input type="button" value="Quinta" id="qui" onclick="qui()">
+                <input type="button" value="Sexta" id="sex" onclick="sex()">
+                <input type="button" value="Sabado" id="sab" onclick="sab()">
+                <input type="button" value="Domingo" id="dom" onclick="dom()">
+            </p>
+        </div>
+        <div>
+            <br><p></p>
+            <br>
+            <video id="first" src="own.mp4" alt="love" controls autoplay > </video>
+
+        </div>
+        <div id="fim"></div>
+
+    </section>
+    <footer id="rodape">
+        <p>&COPY;Valerio@Savage</p>
+    </footer>
+    <script>
+        var f = document.getElementById('fim')
+        video = document.getElementById('first')
+         var data = new Date()
+    var hora = data.getHours()
+    var agora = new Date
+    var diasem = agora.getDay()
+    var img = window.document.getElementById('capa')
+    var video = document.createElement("video")
+    var intro = document.getElementById('introducao')
+    var sem = document.getElementById('semanas')
+    var rod = document.getElementById('rodape')
+   // var diasem = 5
+   // var hora= 20
+    function clicar(){
+        img.src='shisui.jpg'
+    }
+    function entrar(){
+        img.src = "heart.jpg"
+    }
+    function sair(){
+        img.src='cake1.png'
+    }
+    function seg(){
+        if(diasem == 1){
+            if(hora >= 6 && hora <= 10){
+                intro.innerHTML= `<br>
+                <p><strong>Amo uma mulher mas nao vou obrigá-la a me amar</strong></p>
+                <p><strong>E nao espero que ela me ame, mas vou enchela de Amor</strong> </p>
+                <p><strong>E rezar pela sua felecidade</strong> ==> Jiraya Sensei</p>
+                <p><strong>Tenha uma Segunda feliz!</strong></p>
+                <br>`
+                img.src='Shirley.jpeg'
+                sem.innerHTML= `<br><p>I feel something coming!</p>`
+                f.innerHTML =  `<br><br>`
+
+            }else if(hora >=18 && hora <= 23){
+                intro.innerHTML=`<br><p><strong>Dear Mestra!</strong></p> 
+                <p><strong>Espero que esta mensagem encontre você com um sorriso no rosto</strong></p> 
+                <p><strong>Quero dizer te que és linda e inteligente</strong></p> 
+                <p><strong>E me encanta de uma forma única</strong></p> 
+                <p><strong>Adoraria ter a oportunidade de conhecer você melhor</strong></p> 
+                <p><strong>E explorar juntos esse sentimento que me invade</strong></p> 
+                <p><strong>Um abraço carinhoso!</strong></p>`
+                
+                sem.innerHTML = ``
+                
+                img.hidden = "heart.jpg"
+                
+                f.innerHTML = `<br><br>`
+                sem.innerHTML= `
+                <p>I feel something coming!</p>`
+                
+
+
+            }else{
+                window.alert(`[ERRO] Informaçao disponivel nos intervalos de hora plenteados!`)
+            }
+            
+        }else{
+            window.alert(`[ERRO] Volte na Segunda ou Acerte o seu calendario!`)
+        }
+        
+
+    }
+    function ter(){
+        if(diasem == 2){
+            if(hora >= 6 && hora <= 10){
+                intro.innerHTML= `
+                <br><p><strong>Amo uma mulher mas nao vou obrigá-la a me amar</strong></p>
+                <p><strong>E nao espero que ela me ame, mas vou enchela de Amor </strong></p>
+                <p><strong>E rezar pela sua felecidade</strong> ==> <strong>Jiraya Sensei</strong></p>
+                <p><strong>Tenha uma Segunda feliz!</strong></p>`
+                img.src='cake1.png'
+                sem.innerHTML= 'I feel something good coming!'
+                f.innerHTML = `<br><br>`
+                
+
+            }else if(hora >= 18 && hora <= 23){
+                intro.innerHTML= `<br><strong><p>Shirley, oh Shirley</p>
+                            <p>So lovely and bright</p>
+                            <p>Intelligence and beauty</p>
+                            <p>A perfect delight</p>
+                            <p>Her eyes sparkle like diamonds</p>
+                            <p>Her smile lights up the room</p>
+                            <p>She's a true gem among us</p>
+                            <p>A flower in full bloom</p>
+                            <p>So here's to you, Shirley</p>
+                            <p>May your days be filled with glee</p>
+                            <p>You're a wonderful person</p>
+                            <p>And an inspiration to me</p></strong>
+                `
+                img.src='heart.jpg'
+                sem.innerHTML= 'I feel something good coming!'
+                f.innerHTML = `<br><br>`
+
+            }else{
+                window.alert(`[ERRO] Informaçao disponivel nos intervalos de hora plenteados!`)
+            }
+
+        }else{
+            window.alert(`[ERRO] Volte na Terça ou Acerte o seu Calendario!`)
+        }
+    }
+    function qua(){
+        if(diasem == 3){
+               if(hora >= 6 && hora <= 9){
+                intro.innerHTML= `<br><strong><p>Feliz saber que pensas em mim</p>
+                    <p> Ou em algo que eu fiz, Beijos</strong></p>`
+                sem.innerHTML = ``
+                
+                img.src = "cake2.png"
+               }else if(hora >= 18 && hora <= 23){
+                intro.innerHTML= `
+                <br><strong><p>Amo uma mulher mas nao vou obrigá-la a me amar</p>
+                <p>E nao espero que ela me ame, mas vou enchela de Amor </p>
+                <p>E rezar pela sua felecidade</strong> ==> <strong>Jiraya Sensei</strong></p>`
+                f.innerHTML=`<br><p></p>
+                <br>
+               `
+               img.src='naruto.jpg'
+           
+            sem.innerHTML = ``
+            
+               }else {
+                window.alert(`[ERRO] Informaçao disponivel nos intervalos de hora plenteados!`)
+               }
+
+        }else{
+            window.alert(`[ERRO] Volte na Quarta ou Acerte o seu Calendario!`)
+        }
+
+    }
+    function qui(){
+        if(diasem == 4){
+            if(hora >= 6 && hora <=10){
+                intro.innerHTML= `
+                <br><strong><p>Amo uma mulher mas nao vou obrigá-la a me amar</p>
+                <p>E nao espero que ela me ame, mas vou enchela de Amor </p>
+                <p>E rezar pela sua felecidade- Jiraya Sensei</p>
+                <p>Tenha uma quinta feliz! sao</p></strong>`
+                img.src='naruto.jpg'
+                sem.innerHTML= ''
+                f.innerHTML = `<br><br>`
+
+            }else if(hora >= 18 && hora <=23){
+                intro.innerHTML= `<br><strong><p>Feliz saber que pensas em mim ou em algo que eu fiz, Beijos</p>
+                                    <p>Hoje mereces um poema</p></strong>`
+                sem.innerHTML = `<strong><p>Shirley, oh Shirley</p>
+                <p>Tão linda e inteligente</p>
+                <p>Beleza e sabedoria</p>
+                <p>Um encanto evidente</p>
+                <p>Seus olhos brilham como diamantes</p>
+                <p>Seu sorriso ilumina o ambiente</p>
+                <p>És uma verdadeira joia rara</p>
+                <p>Uma flor radiante</p>
+                <p>Então aqui está para ti, Shirley</p>
+                <p>Que teus dias sejam repletos de alegria</p></strong>
+                <p>End!!!!</p>`
+                
+                img.src = "Mestra.jpeg" 
+                f.innerHTML = `<br><br>`
+
+            }else{
+                window.alert(`[ERRO] Informaçao disponivel nos intervalos de hora plenteados!`)
+            }
+
+        }else{
+            window.alert(`[ERRO] Volte na Quinta ou Acerte o seu Calendario!`)
+        }
+
+    }
+    function sex(){
+        if(diasem == 5){
+            if(hora >=19 && hora <= 23){
+            intro.innerHTML= `<br><strong><p>Sempre digo<?p>
+                <p>Amo uma mulher mas nao vou obrigá-la a me amar</p>
+                <p>E nao espero que ela me ame, mas vou enchela de Amor </p>
+                <p>E rezar pela sua felecidade ==> Jiraya Sensei</p>
+                <p>Contudo, nao posso negar que pensamentos e desejos que a avaliaçao</p>
+                <p>Merece uma discursao subjectiva me abraçam</p>
+                <p>Falo de beijar os labios dela enquanto as maos amansam os seios</p>
+                <p>Procurar excita- la sem me importar com os meios</p>
+                <p>Vislumbrar o corpo do pescoço ate a bixiga com beijos</P>
+                <p>Ou abraça- la por tras, beija la o pescoço</p>
+                <p>A mao esquerda amansiando os peitos e direita descendo a bixiga com carinho</p>
+                <p>Para ela entender o quanto desejo  ama- la desforadamente</p>
+                <p>Para que nunca ache ache que so quero molha o biscoito ONLY</p>
+                <p>Contudo sao so pensamentos e desejos de um Selvagem!</p>
+                <p>Oque me importa é o sentimento pura como o do video</p></strong>`
+            video.autoplay = true;
+            sem.innerHTML = ``
+            img.hidden = "heart.jpg"
+            f.innerHTML = `<br><br>`
+                }else if(hora >= 6 && hora <= 10){
+                    intro.innerHTML= `
+                <br><strong><p>Amo uma mulher mas nao vou obrigá-la a me amar</p>
+                <p>E nao espero que ela me ame, mas vou enchela de Amor </p>
+                <p>E rezar pela sua felecidade- Jiraya Sensei</p>
+                <p>Tenha uma Sexta feliz!</p>
+                <p>preparei algo para ti no intervalo das 18 as 23 horas</p></strong>`
+                img.src='itachi.jpg'
+                sem.innerHTML= ''
+                f.innerHTML= `<br><br>`
+
+                }else{
+                    window.alert(`[ERRO] Informaçao disponivel nos intervalos de hora plenteados!`)
+                }
+
+
+        }else{
+            window.alert(`[ERRO] Volte na Sexta ou Acerte o seu Calendario!`)  
+        }
+
+    }
+    function sab(){
+        if(diasem == 6){
+            intro.innerHTML=`<br><strong><p>Feliz sabado!</p>
+                            <p>Desfrute da sua Beleza</p></strong>`
+            img.src='mestra2.jpeg'
+            sem.innerHTML='<br><p>ohhhhhhh! Sticked up!♪♪♪♪</p>'
+            f.innerHTML = `<br><br>`
+
+        }else{
+            window.alert(`[ERRO] Volte no Sabado ou Acerte o seu Calendario!`)
+        }
+
+    }
+    function dom(){
+        if(diasem == 0){
+            intro.innerHTML=`<br><strong>What if i told you that think in you</p>
+             <p>that need you that i love you</p>
+                        <p>You will told it me back?</p></strong>`
+            img.src='savage.png'
+            sem.innerHTML=`<br><p></p>
+                    <p>ooooohhhh ♪♪♪♪`
+                        f.innerHTML = `<br><br>`
+
+        }else{
+            window.alert(`[ERRO] Volte no Domingo ou Acerte o seu Calendario!`)
+        }
+
+    }
+    
+    </script>
+    
+</body>
+</html>
